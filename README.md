@@ -19,8 +19,6 @@ sudo docker-compose up -d
 ```
 
 3. Configure enviroment for laravel :
-* Enviroment file :
-`cp .env-example .env`
 
 * Generate key and optimize commands :
 ```
@@ -32,10 +30,10 @@ sudo docker-compose exec app php artisan cache:clear
 `sudo docker-compose exec app php artisan migrate --seed`
 There may be an error, but the site is still working.
 
-4. Grant permission for storge folder :
+* Grant permission for storge folder :
 ```
 sudo chmod -Rf 777 storage/
-sudo chmod -Rf 777 storage/ # If web folder is in /var/www/
+sudo chmod -Rf 777 /var/www/storage/ # If web folder is in /var/www/
 ```
 
-5. Laravel should work by access http://0.0.0.0:8080
+4. Laravel should work by access http://0.0.0.0:8080
