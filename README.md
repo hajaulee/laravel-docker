@@ -8,6 +8,13 @@
 * docker-machine : docker-machine version 0.12.1, build c8b17e8
 
 ## Run project
+
+* Run bash file (Recommended) :
+```
+chmod +x run.sh && ./run.sh
+```
+* Or run following command.
+
 1. Compose install :
 ```
 sudo docker run --rm -v $(pwd):/app composer/composer install
